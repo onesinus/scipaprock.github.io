@@ -16,7 +16,7 @@ paper.addEventListener("click", function(){
 
 
 function onChoose(idChoosen) {
-    let player_image    = document.getElementById("your-image").children[2];
+    let player_image    = document.getElementById("your-choice");
     switch (idChoosen) {
         case 0:
             player_image.src = "img/gunting.png";
@@ -35,7 +35,7 @@ function onChoose(idChoosen) {
 }
 
 function setComputerChoice(){
-    let computer_image    = document.getElementById("enemy-image").children[2];
+    let computer_image    = document.getElementById("enemy-choice");
 
     let randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
@@ -54,8 +54,8 @@ function setComputerChoice(){
 }
 
 function setScore(yourChoice, computerChoice){
-    let yourScore = document.getElementById("your-score").children[0];
-    let computerScore = document.getElementById("enemy-score").children[0];
+    let yourScore = document.getElementById("your-score");
+    let computerScore = document.getElementById("enemy-score");
 
     switch (yourChoice) {
         case 0:

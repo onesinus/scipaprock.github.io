@@ -4,49 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
     <title>Gubatas</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon.png">
 </head>
 <body>
-    <div id="header">Gunting Batu Kertas</div>
-    <div id="score">
-        <div id="your-score">
-            Your Score
-            <h1>0</h1>
+    <div class="grid">
+        <div class="judul">
+            <h1>Gunting Batu Kertas</h1>
+        </div>        
+        <div class="left-score">
+            <div class="your-score">
+                <h1>Your Score</h1>
+            </div>
+            <div class="your-score">
+                <h1 id="your-score">0</h1>
+                <br>
+                <h2>Your Choice</h2>
+            </div>
         </div>
-        <div id="enemy-score">
-            Computer Score
-            <h1>0</h1>
+        <div class="right-score">
+            <div class="enemy-score">
+                <h1>Computer Score</h1>
+            </div>
+            <div class="enemy-score">
+                <h1 id="enemy-score">0</h1>
+                <br>
+                <h2>Computer Choice</h2>
+            </div>
         </div>
-    </div>
-    <div id="image">
-        <div id="your-image">
-            <h1>Your Choice</h1>
-            <br>
-            <img src="" alt="Your Choice" hidden>            
+        <div class="your-choice">            
+            <img id="your-choice" src="" alt="Your Choice" hidden>            
         </div>
-        <div id="enemy-image">
-            <h1>Computer</h1>
-            <br>
-            <img src="" alt="Computer Choice" hidden>            
+        <div class="enemy-choice">
+            <img id="enemy-choice" src="" alt="Your Choice" hidden>            
         </div>
-    </div>
-    <div id="options">
-        <div id="gunting">
-            <img src="img/gunting.png" alt="Scissors">
+        <div class="gunting">
+            <img id="gunting" src="img/gunting.png" alt="Image Scissor">
         </div>
-        <div id="batu">
-            <img src="img/batu.png" alt="Rock">
+        <div class="batu">
+            <img id="batu" src="img/batu.png" alt="Image Scissor">
         </div>
-        <div id="kertas">
-            <img src="img/kertas.png" alt="Paper">
+        <div class="kertas">
+            <img id="kertas" src="img/kertas.png" alt="Image Scissor">
         </div>
-    </div>
-    <div id="footer">
-        <br>        
-        &copy;Copyright - Onesinus SPT @2019 | Version: 0.0.1
-    </div>
+        <div class="footer">
+            Copyright&copy; OnesinusSPT@2019 | Version: 0.0.2
+        </div>
+    </div>    
     <script src="js/main.js"></script>
 </body>
 </html>
